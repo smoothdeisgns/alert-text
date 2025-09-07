@@ -104,7 +104,7 @@ function alert_text_get_remote_info() {
         'requires' => '5.0',
         'tested' => '6.0',
         'sections' => (object) $sections,
-        'download_link' => 'https://github.com/smoothdesigns/alert-text/archive/main.zip',
+        'download_link' => 'https://github.com/smoothdeisgns/alert-text/archive/refs/heads/main.zip',
         'trunk' => 'https://github.com/smoothdesigns/alert-text/trunk',
     ];
 
