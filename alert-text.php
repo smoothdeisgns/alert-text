@@ -5,7 +5,7 @@
  * Description: A simple "Hello World" plugin that displays an alert on the front end.
  * Version:     1.0.0
  * Author:      Thomas Mirmo
- * Author URI:  https://github.com/smoothdesigns
+ * Author URI:  https://github.com/smoothdesigns/
  * License:     GPL-2.0+
  * Text Domain: alert-text
  */
@@ -71,7 +71,7 @@ function alert_text_plugin_info($result, $action, $args) {
  * @return object|false The plugin info object, or false on failure.
  */
 function alert_text_get_remote_info() {
-    $readmeUrl = 'https://raw.githubusercontent.com/smoothdesigns/alert-text/refs/heads/main/readme.txt';
+    $readmeUrl = 'https://raw.githubusercontent.com/smoothdesigns/alert-text/main/readme.txt';
     $response = wp_remote_get($readmeUrl);
 
     if (is_wp_error($response) || wp_remote_retrieve_response_code($response) !== 200) {
@@ -85,7 +85,7 @@ function alert_text_get_remote_info() {
     $version = isset($matches[1]) ? $matches[1] : '';
 
     $sections = [];
-    preg_match_all('/==\s*([^=]+?)\s*==\s*(.*?)(\n\n|$)/s', $contents, $matches, PREG_SET_ORDER);
+    preg_match_all('/==\s*([^=]+?)\s*==\s*(.*?)(\n\n|$)/s', $contents, PREG_SET_ORDER);
     foreach ($matches as $match) {
         $title = trim($match[1]);
         $content = trim($match[2]);
@@ -98,13 +98,13 @@ function alert_text_get_remote_info() {
         'name' => 'Alert Text',
         'version' => $version,
         'author' => 'Thomas Mirmo',
-        'author_profile' => 'https://github.com/smoothdesigns',
+        'author_profile' => 'https://github.com/smoothdesigns/',
         'last_updated' => gmdate('Y-m-d H:i:s'),
         'homepage' => 'https://github.com/smoothdesigns/alert-text',
         'requires' => '5.0',
         'tested' => '6.0',
         'sections' => (object) $sections,
-        'download_link' => 'https://github.com/smoothdeisgns/alert-text/archive/refs/heads/main.zip',
+        'download_link' => 'https://github.com/smoothdesigns/alert-text/archive/main.zip',
         'trunk' => 'https://github.com/smoothdesigns/alert-text/trunk',
     ];
 
