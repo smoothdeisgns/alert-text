@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Alert Text
- * Plugin URI:  https://github.com/your-username/alert-text-plugin
+ * Plugin URI:  https://github.com/smoothdesigns/alert-text
  * Description: A simple "Hello World" plugin that displays an alert on the front end.
  * Version:     1.0.0
- * Author:      Your Name
- * Author URI:  https://yourwebsite.com
+ * Author:      Thomas Mirmo
+ * Author URI:  https://labs.athleticsja.org
  * License:     GPL-2.0+
  * Text Domain: alert-text
  */
