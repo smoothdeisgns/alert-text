@@ -71,7 +71,7 @@ function alert_text_plugin_info($result, $action, $args) {
  * @return object|false The plugin info object, or false on failure.
  */
 function alert_text_get_remote_info() {
-    $readmeUrl = 'https://raw.githubusercontent.com/smoothdesigns/alert-text/main/readme.txt';
+    $readmeUrl = 'https://raw.githubusercontent.com/smoothdesigns/alert-text/refs/heads/main/readme.txt';
     $response = wp_remote_get($readmeUrl);
 
     if (is_wp_error($response) || wp_remote_retrieve_response_code($response) !== 200) {
@@ -79,7 +79,7 @@ function alert_text_get_remote_info() {
     }
 
     $contents = wp_remote_retrieve_body($response);
-    
+
     // Parse the readme contents to get plugin info and sections.
     preg_match('/^Stable tag:\s*(\S+)/im', $contents, $matches);
     $version = isset($matches[1]) ? $matches[1] : '';
