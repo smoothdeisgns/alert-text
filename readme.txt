@@ -1,12 +1,3 @@
-I've taken the content from your `readme.txt` file and formatted it correctly for the WordPress.org plugin repository.
-
-The key is to use specific headers and tags that the parser understands. I have also added an example of a full, proper changelog.
-
------
-
-### Correctly Formatted `readme.txt`
-
-```
 === Alert Text ===
 Contributors: smoothdeisgns
 Requires at least: 5.0
@@ -47,4 +38,3 @@ The main features include:
 
 = 1.0.0 - 2025-09-08 =
 * Initial Release.
-```
