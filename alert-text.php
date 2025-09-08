@@ -1,14 +1,14 @@
 <?php
 /**
  * Plugin Name: Alert Text
- * Plugin URI:  https://github.com/smoothdeisgns/alert-text
+ * Plugin URI:  https://github.com/smoothdesigns/alert-text
  * Description: A simple "Hello World" plugin that displays an alert on the front end.
  * Version:     1.0.0
  * Requires at least: 5.3
  * Tested up to:      6.8
  * Requires PHP:      7.2
  * Author:      Thomas Mirmo
- * Author URI:  https://github.com/smoothdeisgns/
+ * Author URI:  https://github.com/smoothdesigns/
  * License:     GPL-2.0+
  * Text Domain: alert-text
  */
@@ -74,7 +74,7 @@ function alert_text_plugin_info($result, $action, $args) {
  * @return object|false The plugin info object, or false on failure.
  */
 function alert_text_get_remote_info() {
-    $readmeUrl = 'https://raw.githubusercontent.com/smoothdeisgns/alert-text/main/readme.txt';
+    $readmeUrl = 'https://raw.githubusercontent.com/smoothdesigns/alert-text/main/readme.txt';
     $response = wp_remote_get($readmeUrl);
 
     if (is_wp_error($response) || wp_remote_retrieve_response_code($response) !== 200) {
@@ -101,14 +101,14 @@ function alert_text_get_remote_info() {
         'name' => 'Alert Text',
         'version' => $version,
         'author' => 'Thomas Mirmo',
-        'author_profile' => 'https://github.com/smoothdeisgns/',
+        'author_profile' => 'https://github.com/smoothdesigns/',
         'last_updated' => gmdate('Y-m-d H:i:s'),
-        'homepage' => 'https://github.com/smoothdeisgns/alert-text',
+        'homepage' => 'https://github.com/smoothdesigns/alert-text',
         'requires' => '5.0',
         'tested' => '6.8',
         'sections' => (object) $sections,
-        'download_link' => 'https://github.com/smoothdeisgns/alert-text/archive/main.zip',
-        'trunk' => 'https://github.com/smoothdeisgns/alert-text/trunk',
+        'download_link' => 'https://github.com/smoothdesigns/alert-text/archive/main.zip',
+        'trunk' => 'https://github.com/smoothdesigns/alert-text/trunk',
     ];
 
     return $info;
