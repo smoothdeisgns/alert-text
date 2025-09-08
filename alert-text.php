@@ -5,7 +5,7 @@
  * Description: A simple "Hello World" plugin that displays an alert on the front end.
  * Version:     1.0.0
  * Requires at least: 5.3
- * Tested up to:      6.8
+ * Tested up to:      6.8.2
  * Requires PHP:      7.2
  * Author:      Thomas Mirmo
  * Author URI:  https://github.com/smoothdesigns/
