@@ -4,6 +4,9 @@
  * Plugin URI:  https://github.com/smoothdeisgns/alert-text
  * Description: A simple "Hello World" plugin that displays an alert on the front end.
  * Version:     1.0.0
+ * Requires at least: 5.3
+ * Tested up to:      6.8
+ * Requires PHP:      7.2
  * Author:      Thomas Mirmo
  * Author URI:  https://github.com/smoothdeisgns/
  * License:     GPL-2.0+
@@ -102,7 +105,7 @@ function alert_text_get_remote_info() {
         'last_updated' => gmdate('Y-m-d H:i:s'),
         'homepage' => 'https://github.com/smoothdeisgns/alert-text',
         'requires' => '5.0',
-        'tested' => '6.0',
+        'tested' => '6.8',
         'sections' => (object) $sections,
         'download_link' => 'https://github.com/smoothdeisgns/alert-text/archive/main.zip',
         'trunk' => 'https://github.com/smoothdeisgns/alert-text/trunk',
