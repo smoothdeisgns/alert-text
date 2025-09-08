@@ -1,7 +1,16 @@
+I've taken the content from your `readme.txt` file and formatted it correctly for the WordPress.org plugin repository.
+
+The key is to use specific headers and tags that the parser understands. I have also added an example of a full, proper changelog.
+
+-----
+
+### Correctly Formatted `readme.txt`
+
+```
 === Alert Text ===
-Contributors: your-username
+Contributors: smoothdeisgns
 Requires at least: 5.0
-Tested up to: 6.0
+Tested up to: 6.8
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,22 +23,28 @@ This plugin serves as a starting point for developing WordPress plugins that are
 
 The main features include:
 
-A basic plugin header with all the necessary information.
-
-A "View Details" link on the plugins page.
-
-A custom GitHub update checker.
+* A basic plugin header with all the necessary information.
+* A "View Details" link on the plugins page.
+* A custom GitHub update checker.
 
 == Installation ==
 
-Upload the alert-text folder to the /wp-content/plugins/ directory.
+1. Upload the `alert-text` folder to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. You'll now see a "Hello World" alert on every page of your site.
 
-Activate the plugin through the 'Plugins' menu in WordPress.
+== Frequently Asked Questions ==
 
-You'll now see a "Hello World" alert on every page of your site.
+(If you have any common questions about your plugin, you would add them here with a header for each question like: `= How do I change the alert text? =`)
+
+== Screenshots ==
+
+(If you have screenshots, list them here with a number and caption, like this:
+1. The "Hello World" alert box on the front end.
+2. The plugin's settings page in the WordPress admin.)
 
 == Changelog ==
 
-= 1.0.0 =
-
-Initial release.
+= 1.0.0 - 2025-09-08 =
+* Initial Release.
+```
